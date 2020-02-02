@@ -10,7 +10,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title"><a href="/categories/{{$category->id}}"> {{$category->name}} </a></h5>
-                            <p class="card-text">Year of creation: {{$category->year_of_creation}}</p>
+                            <p class="card-text">Продукти от тази категория: {{$category->name}}</p>
                             <div class="row">
                             <a class="btn btn-primary ml-3" href="/categories/{{$category->id}}/edit">Edit</a>
                             <form method="post" action="categories/{{$category->id}}">
