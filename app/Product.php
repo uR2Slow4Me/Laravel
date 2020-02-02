@@ -8,6 +8,6 @@ class Product extends Model
 {
     public function category()
     {
-        $this->belongsTo(Category::class);
+        return $this->belongsTo('App\Category', 'category_id', 'id');
     }
 }
